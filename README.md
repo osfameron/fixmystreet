@@ -16,6 +16,11 @@ It was created in 2007 by [mySociety](http://www.mysociety.org/) for reporting
 problems to UK councils and has been copied around the world. The FixMyStreet
 Platform is now at version 1.2.4.
 
+## Mobile apps
+
+We've extracted all of the mobile apps from this repository into the
+[fixmystreet-mobile repository](https://github.com/mysociety/fixmystreet-mobile).
+
 ## Releases
 
 * v1.2.4 (5th September 2013)
