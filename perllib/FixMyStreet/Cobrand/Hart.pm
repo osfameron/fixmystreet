@@ -57,6 +57,12 @@ sub on_map_default_max_pin_age {
     return '1 month';
 }
 
+sub recent_photos {
+    my ( $self, $area, $num, $lat, $lon, $dist ) = @_;
+    $num = 3 if $num > 3 && $area eq 'alert';
+    return $self->problems->recent_photos( $num, $lat, $lon, $dist );
+}
+
 sub send_questionnaires {
     return 0;
 }
