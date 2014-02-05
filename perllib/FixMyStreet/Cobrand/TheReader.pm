@@ -54,15 +54,5 @@ sub users_can_hide { return 1; }
 
 sub default_show_name { 0 }
 
-sub other_category_options {
-    return (
-        'Literary facts',
-        'Favourite reading spot',
-        'Reading groups',
-        'Events',
-        'Other',
-    );
-}
-
 1;
 
