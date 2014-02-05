@@ -5,6 +5,10 @@ body, body a {
   font-family:"Trebuchet MS",Arial, Helvetica, sans-serif; 
 }
 
+#sub_map_links {
+    display: none;
+}
+
 #front-main {
   background-color: $primary;
   background-image: none;
