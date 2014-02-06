@@ -41,7 +41,7 @@ sub disambiguate_location {
 }
 
 sub example_places {
-    return ( 'Branksomewood Rd', 'Primrose Dr' );
+    return ( 'GU51 4JX', 'Primrose Dr' );
 }
 
 sub map_type {
