@@ -145,7 +145,8 @@
 
                 <div id="form_sign_in">
                     <h3>[% loc("Now to submit your report&hellip;") %]</h3>
-                    <h2>[% loc("Do you have a FixMyStreet password?") %]</h2>
+
+                    <!-- <h2>[% loc("Do you have a FixMyStreet password?") %]</h2> 
 
                     <div id="form_sign_in_yes" class="form-box">
 
@@ -172,8 +173,12 @@
 
                     </div>
 
+                    -->
                     <div id="form_sign_in_no" class="form-box">
+
+                    <!--
                         <h5>[% loc('<strong>No</strong> Let me confirm my report by email') %]</h5>
+                    -->
 
                         [% INCLUDE 'report/new/extra_name.html' %]
 
@@ -188,23 +193,21 @@
                         </script>
 
 
-                        [%# if there is nothing in the name field then set check box as default on form %]
-                        <div class="checkbox-group">
-                            <input type="checkbox" name="may_show_name" id="form_may_show_name" value="1"[% ' checked' IF report.anonymous==0 OR (c.cobrand.default_show_name AND report.anonymous=='') %]>
-                            <label class="inline" for="form_may_show_name">[% loc('Show my name publicly') %]</label>
-                        </div>
+                        <input type="hidden" name="may_show_name" id="form_may_show_name" value="1">
 
                         <div class="general-sidebar-notes form-focus-hidden">
-                            <p class="dark">[% loc('We never show your email address or phone number.') %]</p>
-                            <p>[% loc('Providing a password is optional, but doing so will allow you to more easily report problems, leave updates and manage your reports.') %]</p>
+                            <p class="dark">[% loc('We never show your email address.') %]</p>
+                            <!-- <p>[% loc('Providing a password is optional, but doing so will allow you to more easily report problems, leave updates and manage your reports.') %]</p> -->
                         </div>
 
+                        <!--
                         <label class="form-focus-hidden" for="password_register">[% loc('Password (optional)') %]</label>
 
                         <div class="form-txt-submit-box form-focus-hidden">
                             <input type="password" name="password_register" id="password_register" value="" placeholder="[% loc('Enter a password') %]">
                             <input class="green-btn" type="submit" id="submit_register" name="submit_register" value="[% loc('Submit') %]">
                         </div>
+                        -->
                     </div>
                 </div>
 
