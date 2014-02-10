@@ -1,13 +1,7 @@
 [% allow_creation = !c.cobrand.only_authed_can_create || (c.user && c.user.from_body) %]
 [% IF allow_creation %]
 <div id="update_form">
-    <h2>[% loc( 'Provide an update') %]</h2>
-
-    [% IF c.cobrand.moniker != 'emptyhomes' AND c.cobrand.moniker != 'stevenage' %]
-    <div class="general-sidebar-notes">
-        [% INCLUDE 'report/updates-sidebar-notes.html' %]
-    </div>
-    [% END %]
+    <h2>[% loc( 'Comment on this story') %]</h2>
 
     [% INCLUDE 'errors.html' %]
 
@@ -21,33 +15,6 @@
                 <div class='form-error'>[% field_errors.update %]</div>
             [% END %]
             <textarea rows="7" cols="30" name="update" id="form_update" placeholder="[% loc('Please write your update here') %]" required>[% update.text | html %]</textarea>
-
-            [% IF c.user && c.user.belongs_to_body( problem.bodies_str ) %]
-                <label for="form_state">[% loc( 'State' ) %]</label>
-                <select name="state" id="form_state">
-                [% FOREACH state IN [ ['confirmed', loc('Open')], ['investigating',
-                loc('Investigating')], ['action scheduled', loc('Action Scheduled')],
-                ['in progress', loc('In Progress')], ['duplicate', loc('Duplicate')],
-                ['unable to fix', loc('Unable to fix')], ['not responsible', loc('Not Responsible')],
-                ['fixed', loc('Fixed')] ] %]
-                    <option [% 'selected ' IF state.0 == problem.state %] value="[% state.0 %]">[% state.1 %]</option>
-                [% END %]
-                </select>
-            [% ELSE %]
-                [% IF problem.is_fixed AND c.user_exists AND c.user.id == problem.user_id %]
-                
-                <input type="checkbox" name="reopen" id="form_reopen" value="1"[% ' checked' IF update.mark_open %]>
-                <label class="inline" for="form_reopen">[% loc('This problem has not been fixed') %]</label>
-                
-                [% ELSIF !problem.is_fixed %]
-                
-                <div class="checkbox-group">
-                    <input type="checkbox" name="fixed" id="form_fixed" value="1"[% ' checked' IF update.mark_fixed %]>
-                    <label class="inline" for="form_fixed">[% loc('This problem has been fixed') %]</label>
-                </div>
-
-                [% END %]
-            [% END %]
 
         [% IF c.cobrand.allow_photo_upload %]
             <div id="fileupload_normalUI">
@@ -140,8 +107,7 @@
     <input type="text" [% IF problem.bodies_str == '2482' %]class="" [% END %]name="name" id="form_name" value="[% update.name || c.user.name | html %]" placeholder="[% loc('Your name') %]">
 
     <div class="checkbox-group">
-        <input type="checkbox" name="may_show_name" id="form_may_show_name" value="1"[% ' checked' IF update.anonymous==0 OR (c.cobrand.default_show_name AND update.anonymous=='') %]>
-        <label class="inline" for="form_may_show_name">[% loc('Show my name publicly') %]</label>
+        <input type="hidden" name="may_show_name" id="form_may_show_name" value="1">
     </div>
     <div class="checkbox-group">
         <input type="checkbox" name="add_alert" id="form_add_alert" value="1"[% ' checked' IF add_alert %]>
