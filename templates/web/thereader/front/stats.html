@@ -22,5 +22,9 @@
 %]
 
 <div id="front_stats">
-    <div>[% tprintf( new_text,     stats.new     ) | comma %]</div>
+    <div>
+    <a href="/reports">
+    [% tprintf( new_text,     stats.new     ) | comma %]
+    </a>
+    </div>
 </div>
