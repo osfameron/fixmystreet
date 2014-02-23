@@ -2528,7 +2528,7 @@ msgstr "The simplest alert is our geographic one:"
 
 #: templates/web/barnet/report/new/councils_text_all.html:3 templates/web/default/report/new/councils_extra_text.html:1 templates/web/default/report/new/councils_text_some.html:10 templates/web/default/report/new/councils_text_some.html:11 templates/web/default/report/new/fill_in_details_form.html:17 templates/web/fixmystreet/report/new/fill_in_details_form.html:12
 msgid "The subject and details of the problem will be public, plus your name if you give us permission."
-msgstr "The subject and details of your story will be public, plus your name if you give us permission."
+msgstr "The subject and details of your story will be public."
 
 #: perllib/FixMyStreet/DB/ResultSet/Problem.pm:291
 msgid "The user could not locate the problem on a map, but to see the area around the location they entered"
