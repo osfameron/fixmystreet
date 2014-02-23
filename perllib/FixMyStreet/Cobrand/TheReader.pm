@@ -50,6 +50,8 @@ sub pin_create_colour {
     return 'book-brown';
 }
 
+sub pin_colour_use_big { 1 }
+
 sub enter_postcode_text {
     my ($self) = @_;
     return 'Enter a Liverpool postcode, or street name and area';

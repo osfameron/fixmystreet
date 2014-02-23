@@ -64,6 +64,8 @@ sub pin_colour {
     return 'yellow';
 }
 
+sub pin_colour_use_big { 1 }
+
 # This isn't used
 sub find_closest {
     my ( $self, $latitude, $longitude, $problem ) = @_;
