@@ -5,3 +5,12 @@
 
 @import "../sass/base";
 
+body #site-logo {
+    background: url('/cobrands/thereader/images/logo1-small.png') 0px -5px no-repeat;
+    height: 100px;
+    width: 110px;
+}
+
+a:hover, a:active, a:visited:hover, a:visited:active {
+    text-decoration: none;
+}

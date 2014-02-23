@@ -1,2 +1,10 @@
 @import "_colours";
 @import "../sass/layout";
+
+body.frontpage #site-logo {
+    background: url('/cobrands/thereader/images/logo1.png') 0px -10px no-repeat;
+    margin-top: -40px;
+    height: 150px;
+    width: 150px;
+}
+
