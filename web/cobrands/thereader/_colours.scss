@@ -3,18 +3,21 @@
 $orange: #ff9900;
 $bluey: #6688ff;
 
-$primary: $orange;
+$cityofreaders_background: #6ab3b2; 
+$cityofreaders_border: #50a09f;
+
+$primary: $cityofreaders_border;
 $primary_b: #000000;
 $primary_text: #222222;
 
-$base_bg: $bluey;
+$base_bg: $cityofreaders_background;
 $base_fg: #000;
 
-$map_nav_bg: $bluey;
+$map_nav_bg: $cityofreaders_background;
 $nav_fg: #000;
 $nav_fg_hover: $primary;
 
-$col_click_map: $bluey;
+$col_click_map: $primary;
 $col_click_map_dark: darken($bluey, 10%);
 
 $col_fixed_label: #00BD08;
