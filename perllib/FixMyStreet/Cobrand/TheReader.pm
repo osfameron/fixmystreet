@@ -22,6 +22,34 @@ sub path_to_web_templates {
     ];
 }
 
+=head 2 pin_colour
+
+Returns the colour of pin to be used for a particular report
+(so perhaps different depending upon the age of the report).
+
+=cut
+
+sub pin_colour {
+    my ( $self, $p, $context ) = @_;
+
+    # TODO, this should be configurable
+
+    my $category = $p->category || 'Other';
+    return { 
+        'Event'                  => 'book-red',
+        'Favourite Reading Spot' => 'book-magenta',
+        'Library Activity'       => 'book-blue',
+        'Literary Facts'         => 'book-brown',
+        'Reading Group'          => 'book-indigo',
+        'School Activity'        => 'book-green',
+        'Other'                  => 'book-grey',
+    }->{$category} || 'book-grey';
+}
+
+sub pin_create_colour {
+    return 'book-brown';
+}
+
 sub enter_postcode_text {
     my ($self) = @_;
     return 'Enter a Liverpool postcode, or street name and area';

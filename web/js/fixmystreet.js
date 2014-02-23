@@ -17,7 +17,7 @@ $(function(){
     $html.removeClass('no-js').addClass('js');
 
     // Preload the new report pin
-    document.createElement('img').src = '/i/pin-green.png';
+    document.createElement('img').src = '/i/pin-book-brown.png';
 
     // Focus on postcode box on front page
     $('#pc').focus();

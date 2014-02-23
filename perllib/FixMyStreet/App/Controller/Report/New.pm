@@ -1111,7 +1111,7 @@ sub generate_map : Private {
             pins      => [ {
                 latitude  => $latitude,
                 longitude => $longitude,
-                colour    => 'green', # 'yellow',
+                colour    => $c->cobrand->pin_create_colour,
             } ],
         );
     }

@@ -735,6 +735,10 @@ sub pin_colour {
     return $p->is_fixed ? 'green' : 'red';
 }
 
+sub pin_create_colour {
+    return 'green';
+}
+
 =head2 tweak_all_reports_map
 
 Used to tweak the display settings of the map on the all reports pages.
