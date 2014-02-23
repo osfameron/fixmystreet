@@ -1,0 +1,8 @@
+<div class="shadow-wrap">
+    <ul id="key-tools"[% IF NOT children.size %] class="singleton"[% END %]>
+        <li><a rel="nofollow" id="key-tool-updates-area" class="feed" href="[% rss_url %]">
+        [% tprintf(loc('Get updates of problems in this %s'), thing); %]
+        </a></li>
+    </ul>
+</div>
+

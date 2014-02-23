@@ -267,7 +267,7 @@ msgstr "All Reports"
 
 #: templates/web/barnet/footer.html:20 templates/web/bromley/footer.html:21 templates/web/bromley/header.html:77 templates/web/default/footer.html:11 templates/web/emptyhomes/header.html:32 templates/web/fiksgatami/footer.html:7 templates/web/fiksgatami/nn/footer.html:7 templates/web/fixmindelo/footer.html:41 templates/web/fixmybarangay/footer.html:20 templates/web/fixmystreet/footer.html:48 templates/web/oxfordshire/footer.html:23 templates/web/oxfordshire/header.html:67 templates/web/reading/footer.html:8 templates/web/stevenage/footer.html:43 templates/web/zurich/admin/index-dm.html:12 templates/web/zurich/admin/stats.html:13 templates/web/zurich/footer.html:19 templates/web/zurich/nav_over_content.html:6
 msgid "All reports"
-msgstr "All reports"
+msgstr "All stories"
 
 #: templates/web/default/admin/stats.html:5 templates/web/zurich/admin/stats.html:8
 msgid "All reports between %s and %s"
@@ -909,11 +909,11 @@ msgstr "Get updates"
 
 #: templates/web/fixmystreet/reports/_rss.html:3 templates/web/fixmystreet/reports/_rss.html:9
 msgid "Get updates of %s problems"
-msgstr "Get updates of %s stories"
+msgstr "Get updates of stories"
 
 #: templates/web/fixmystreet/reports/_rss.html:11 templates/web/fixmystreet/reports/_rss.html:3
 msgid "Get updates of problems in this %s"
-msgstr "Get updates of stories in this %s"
+msgstr "Get updates of stories"
 
 #: templates/web/default/alert/_list.html:83 templates/web/fixmybarangay/alert/_list.html:28 templates/web/fixmystreet/alert/_list.html:82
 msgid "Give me an RSS feed"
@@ -1174,7 +1174,7 @@ msgstr "Local RSS feeds and email alerts for ‘%s’"
 
 #: templates/web/barnet/footer.html:22 templates/web/bromley/footer.html:23 templates/web/bromley/header.html:79 templates/web/default/footer.html:13 templates/web/fiksgatami/footer.html:8 templates/web/fiksgatami/nn/footer.html:8 templates/web/fixmindelo/footer.html:43 templates/web/fixmybarangay/footer.html:22 templates/web/fixmystreet/footer.html:50 templates/web/oxfordshire/footer.html:25 templates/web/oxfordshire/header.html:71 templates/web/reading/footer.html:9 templates/web/stevenage/footer.html:45
 msgid "Local alerts"
-msgstr "Get local reports"
+msgstr "Get local stories"
 
 #: templates/web/default/index-steps.html:25
 msgid "Locate the problem on a map of the area"
@@ -3076,7 +3076,7 @@ msgstr "Your report has been created and will shortly be sent."
 
 #: templates/web/barnet/footer.html:18 templates/web/bromley/footer.html:19 templates/web/bromley/header.html:75 templates/web/default/footer.html:9 templates/web/fiksgatami/footer.html:6 templates/web/fiksgatami/nn/footer.html:6 templates/web/fixmindelo/footer.html:39 templates/web/fixmystreet/footer.html:46 templates/web/oxfordshire/footer.html:21 templates/web/oxfordshire/header.html:63 templates/web/reading/footer.html:7 templates/web/stevenage/footer.html:41
 msgid "Your reports"
-msgstr "Your reports"
+msgstr "Your stories"
 
 #: templates/web/default/my/my.html:45 templates/web/fixmystreet/my/my.html:49
 msgid "Your updates"
