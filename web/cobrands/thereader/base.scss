@@ -14,3 +14,8 @@ body #site-logo {
 a:hover, a:active, a:visited:hover, a:visited:active {
     text-decoration: none;
 }
+
+/* for IE */
+#site-header {
+    min-height: 4.5em;
+}

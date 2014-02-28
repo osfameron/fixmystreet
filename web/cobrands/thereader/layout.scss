@@ -1,6 +1,16 @@
 @import "_colours";
 @import "../sass/layout";
 
+/* really for benefit of IE */
+body.frontpage #site-header {
+    height: 9em;
+}
+@media only screen and (min-width: 48em) {
+    .nav-wrapper .nav-wrapper-2 {
+        min-height: 4.5em;
+    }
+}
+
 body.frontpage #site-logo {
     background: url('/cobrands/thereader/images/logo1.png') 0px -10px no-repeat;
     margin-top: -40px;
