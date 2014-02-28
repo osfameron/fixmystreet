@@ -263,7 +263,7 @@ msgstr "Alert me to future updates"
 
 #: templates/web/default/reports/index.html:3 templates/web/fixmybarangay/reports/index.html:3 templates/web/zurich/admin/stats.html:5 templates/web/zurich/reports/index.html:15
 msgid "All Reports"
-msgstr "All Reports"
+msgstr "All stories"
 
 #: templates/web/barnet/footer.html:20 templates/web/bromley/footer.html:21 templates/web/bromley/header.html:77 templates/web/default/footer.html:11 templates/web/emptyhomes/header.html:32 templates/web/fiksgatami/footer.html:7 templates/web/fiksgatami/nn/footer.html:7 templates/web/fixmindelo/footer.html:41 templates/web/fixmybarangay/footer.html:20 templates/web/fixmystreet/footer.html:48 templates/web/oxfordshire/footer.html:23 templates/web/oxfordshire/header.html:67 templates/web/reading/footer.html:8 templates/web/stevenage/footer.html:43 templates/web/zurich/admin/index-dm.html:12 templates/web/zurich/admin/stats.html:13 templates/web/zurich/footer.html:19 templates/web/zurich/nav_over_content.html:6
 msgid "All reports"
@@ -449,7 +449,7 @@ msgstr "Click here or enter as dd/mm/yyyy"
 
 #: templates/web/default/js/translation_strings.html:47 templates/web/fixmystreet/around/_report_banner.html:2
 msgid "Click map to report a problem"
-msgstr "Click map to report an story"
+msgstr "Click map to tell a story"
 
 #: templates/web/oxfordshire/js/translation_strings.html:39
 msgid "Click on the map to report a problem"
@@ -1366,7 +1366,7 @@ msgstr "No stories found."
 
 #: templates/web/default/around/on_map_list_items.html:14 templates/web/fixmystreet/around/on_map_list_items.html:6
 msgid "No problems have been reported yet."
-msgstr "No stories have been reported yet."
+msgstr "No stories have been told near here yet, be the first!"
 
 #: templates/web/default/js/translation_strings.html:38 templates/web/oxfordshire/js/translation_strings.html:32
 msgid "No result returned"
@@ -1438,11 +1438,11 @@ msgstr "Note: <strong>%s</strong>"
 
 #: templates/web/fixmystreet/report/new/fill_in_details_form.html:154
 msgid "Now to submit your report&hellip;"
-msgstr "Now to submit your report&hellip;"
+msgstr "Now to submit your story&hellip;"
 
 #: templates/web/default/report/new/fill_in_details_form.html:131
 msgid "Now to submit your report&hellip; do you have a FixMyStreet password?"
-msgstr "Now to submit your report&hellip; do you have a City of Readers Map password?"
+msgstr "Now to submit your story&hellip; do you have a City of Readers Map password?"
 
 #: templates/web/fixmystreet/report/update-form.html:83
 msgid "Now to submit your update&hellip;"
@@ -1506,7 +1506,7 @@ msgstr "Open311 specification"
 
 #: templates/web/default/alert/_list.html:58 templates/web/fixmystreet/alert/_list.html:60
 msgid "Or problems reported to:"
-msgstr "Or stories reported to:"
+msgstr "Or stories told to:"
 
 #: templates/web/default/alert/_list.html:33 templates/web/fixmystreet/alert/_list.html:36
 msgid "Or you can subscribe to an alert based upon what ward or council you&rsquo;re in:"
@@ -1889,15 +1889,15 @@ msgstr "Provide an update"
 
 #: templates/web/fixmystreet/auth/general.html:53
 msgid "Providing a name and password is optional, but doing so will allow you to more easily report problems, leave updates and manage your reports."
-msgstr "Providing a name and password is optional, but doing so will allow you to more easily report stories, leave updates and manage your reports."
+msgstr "Providing a name and password is optional, but doing so will allow you to more easily report stories, leave updates and manage your stories."
 
 #: templates/web/bromley/report/new/fill_in_details_form.html:180
 msgid "Providing a password is optional, but doing so will allow you to more easily report future problems, leave updates and manage your reports."
-msgstr "Providing a password is optional, but doing so will allow you to more easily report future stories, leave updates and manage your reports."
+msgstr "Providing a password is optional, but doing so will allow you to more easily report future stories, leave updates and manage your stories."
 
 #: templates/web/bromley/report/display.html:144 templates/web/default/report/new/fill_in_details_form.html:173 templates/web/default/report/update-form.html:128 templates/web/fixmystreet/report/new/fill_in_details_form.html:202 templates/web/fixmystreet/report/update-form.html:116
 msgid "Providing a password is optional, but doing so will allow you to more easily report problems, leave updates and manage your reports."
-msgstr "Providing a password is optional, but doing so will allow you to more easily report stories, leave updates and manage your reports."
+msgstr "Providing a password is optional, but doing so will allow you to more easily report stories, leave updates and manage your stories."
 
 #: templates/web/default/admin/body.html:60 templates/web/default/admin/body.html:73
 msgid "Public"
@@ -1997,7 +1997,7 @@ msgstr "Recently returned to use"
 
 #: templates/web/default/index.html:35 templates/web/emptyhomes/index.html:24 templates/web/fixmystreet/index.html:45
 msgid "Recently reported problems"
-msgstr "Recently reported stories"
+msgstr "Recently told stories"
 
 #: templates/web/default/report/new/notes.html:9 templates/web/fixmystreet/report/new/notes.html:10
 msgid "Remember that FixMyStreet is primarily for reporting physical problems that can be fixed. If your problem is not appropriate for submission via this site remember that you can contact your council directly using their own website."
@@ -2033,7 +2033,7 @@ msgstr "Stories on %s"
 
 #: templates/web/default/index.html:14 templates/web/emptyhomes/index.html:5 templates/web/fixmystreet/around/intro.html:1 templates/web/stevenage/around/intro.html:1 templates/web/zurich/around/intro.html:1
 msgid "Report, view, or discuss local problems"
-msgstr "Report or view stories about reading in Liverpool"
+msgstr "Tell, view, or discuss stories about reading in Liverpool"
 
 #: templates/web/default/my/my.html:74
 msgid "Reported %s"
@@ -2085,7 +2085,7 @@ msgstr "Told via %s in the %s category by %s at %s"
 
 #: templates/web/default/around/around_index.html:1 templates/web/default/js/translation_strings.html:41 templates/web/default/report/new/fill_in_details.html:0 templates/web/default/report/new/fill_in_details.html:3 templates/web/default/report/new/fill_in_details_form.html:1 templates/web/emptyhomes/report/new/fill_in_details_form.html:1 templates/web/fixmystreet/around/around_index.html:2 templates/web/fixmystreet/report/new/fill_in_details.html:0 templates/web/fixmystreet/report/new/fill_in_details.html:5 templates/web/fixmystreet/report/new/fill_in_details_form.html:2 templates/web/oxfordshire/js/translation_strings.html:35 templates/web/seesomething/around/around_index.html:1 templates/web/seesomething/report/new/fill_in_details_form.html:3 templates/web/zurich/report/new/fill_in_details_form.html:2
 msgid "Reporting a problem"
-msgstr "Telling us a story about reading in Liverpool"
+msgstr "Tell us a story about reading in Liverpool"
 
 #: perllib/FixMyStreet/App/Controller/Admin.pm:1177 perllib/FixMyStreet/Cobrand/Zurich.pm:242 templates/web/seesomething/admin/stats.html:1 templates/web/zurich/header.html:60
 msgid "Reports"
@@ -2544,7 +2544,7 @@ msgstr ""
 
 #: perllib/FixMyStreet/App/Controller/Reports.pm:69
 msgid "There was a problem showing the All Reports page. Please try again later."
-msgstr "There was an problem showing the All Reports page. Please try again later."
+msgstr "There was an problem showing the All Stories page. Please try again later."
 
 #: perllib/FixMyStreet/App/Controller/Contact.pm:116 perllib/FixMyStreet/App/Controller/Dashboard.pm:59
 msgid "There was a problem showing this page. Please try again later."
@@ -2576,7 +2576,7 @@ msgstr "This API implementation is work in progress and not yet stabilized.  It 
 
 #: templates/web/default/admin/body.html:43
 msgid "This body has no contacts. This means that currently problems reported to this body <strong>will not be sent</strong>."
-msgstr "This body has no contacts. This means that currently stories reported to this body <strong>will not be sent</strong>."
+msgstr "This body has no contacts. This means that currently stories told to this body <strong>will not be sent</strong>."
 
 #: templates/web/default/admin/body-form.html:52 templates/web/default/admin/body-form.html:53
 msgid ""
