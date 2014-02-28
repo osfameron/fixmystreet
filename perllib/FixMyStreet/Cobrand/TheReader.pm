@@ -4,6 +4,8 @@ use base 'FixMyStreet::Cobrand::UK';
 use strict;
 use warnings;
 
+sub site_title { 'City of Readers Map' }
+
 sub language_domain { 'FixMyStreet-TheReader' }
 
 sub show_reports_with_map { 1 }
@@ -70,7 +72,7 @@ sub disambiguate_location {
 }
 
 sub example_places {
-    return ( 'Whitechapel', 'Playhouse Theatre' );
+    return ( 'L1 6EG', 'Playhouse Theatre' );
 }
 
 # don't send questionnaires
