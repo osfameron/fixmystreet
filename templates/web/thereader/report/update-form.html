@@ -40,14 +40,10 @@
 
         [% ELSE %]
 
-            <label for="form_rznvy">[% loc('Email' ) %]</label>
-            [% IF field_errors.email %]
-                <p class='form-error'>[% field_errors.email %]</p>
-            [% END %]
-            <input type="email" name="rznvy" id="form_rznvy" value="[% update.user.email | html %]" placeholder="[% loc('Your email address' ) %]" required>
-
             <div id="form_sign_in">
                 <h3>[% loc("Now to submit your update&hellip;") %]</h3>
+
+                <!--
                 <h2>[% loc("Do you have a FixMyStreet password?") %]</h2>
 
                 <div id="form_sign_in_yes" class="form-box">
@@ -73,20 +69,33 @@
                     </div>
 
                 </div>
+                -->
                 <div id="form_sign_in_no" class="form-box">
+                    <!--
                     <h5>[% loc('<strong>No</strong> Let me confirm my update by email') %]</h5>
+                    -->
+
+                    <label for="form_rznvy">[% loc('Email' ) %]</label>
+                    [% IF field_errors.email %]
+                        <p class='form-error'>[% field_errors.email %]</p>
+                    [% END %]
+                    <input type="email" name="rznvy" id="form_rznvy" value="[% update.user.email | html %]" placeholder="[% loc('Your email address' ) %]" required>
+
 
                     [% INCLUDE name %]
                     
                     <div class="general-sidebar-notes">
                         <p class="dark">[% loc('We never show your email') %]</p>
-                        <p>[% loc('Providing a password is optional, but doing so will allow you to more easily report problems, leave updates and manage your reports.') %]</p>
                     </div>
 
+                    <!--
                     <label for="password_register">[% loc('Password (optional)') %]</label>
+                    -->
 
                     <div class="form-txt-submit-box">
+                        <!--
                         <input type="password" name="password_register" id="password_register" value="" placeholder="[% loc('Enter a password') %]">
+                        -->
                         <input class="green-btn" type="submit" name="submit_register" id="submit_register" value="[% loc('Post') %]">
                     </div>
                 </div>

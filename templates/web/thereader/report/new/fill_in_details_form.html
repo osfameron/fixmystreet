@@ -139,13 +139,8 @@
                 </div>
             [% ELSE %]
 
-                <label for="form_email">[% loc('Your email') %]</label>
-                [% IF field_errors.email %]
-                    <p class='form-error'>[% field_errors.email %]</p>
-                [% END %]
-                <input type="email" value="[% report.user.email | html %]" name="email" id="form_email" placeholder="[% loc('Please enter your email address') %]" required>
-
                 <div id="form_sign_in">
+
                     <h3>[% loc("Now to submit your report&hellip;") %]</h3>
 
                     <!-- <h2>[% loc("Do you have a FixMyStreet password?") %]</h2> 
@@ -181,6 +176,12 @@
                     <!--
                         <h5>[% loc('<strong>No</strong> Let me confirm my report by email') %]</h5>
                     -->
+                        <label for="form_email">[% loc('Your email') %]</label>
+                        [% IF field_errors.email %]
+                            <p class='form-error'>[% field_errors.email %]</p>
+                        [% END %]
+                        <input type="email" value="[% report.user.email | html %]" name="email" id="form_email" placeholder="[% loc('Please enter your email address') %]" required>
+
 
                         [% INCLUDE 'report/new/extra_name.html' %]
 
@@ -204,12 +205,14 @@
 
                         <!--
                         <label class="form-focus-hidden" for="password_register">[% loc('Password (optional)') %]</label>
+                        -->
 
-                        <div class="form-txt-submit-box form-focus-hidden">
+                        <div class="form-txt-submit-box">
+                            <!--
                             <input type="password" name="password_register" id="password_register" value="" placeholder="[% loc('Enter a password') %]">
+                            -->
                             <input class="green-btn" type="submit" id="submit_register" name="submit_register" value="[% loc('Submit') %]">
                         </div>
-                        -->
                     </div>
                 </div>
 
