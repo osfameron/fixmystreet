@@ -13,7 +13,7 @@ sub area_id { 2527 }
 
 sub base_url {
     return FixMyStreet->config('BASE_URL') if FixMyStreet->config('STAGING_SITE');
-    return 'http://thereader.org.uk';
+    return 'http://map.cityofreaders.org';
 }
 
 sub path_to_web_templates {
