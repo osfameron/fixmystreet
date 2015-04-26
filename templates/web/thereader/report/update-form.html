@@ -16,6 +16,19 @@
             [% END %]
             <textarea rows="7" cols="30" name="update" id="form_update" placeholder="[% loc('Please write your update here') %]" required>[% update.text | html %]</textarea>
 
+            <!--
+            [% IF c.user && c.user.belongs_to_body( problem.bodies_str ) %]
+            <div class="form-field">
+                <label for="form_state">[% loc( 'State:' ) %]</label>
+                <select name="state" id="form_state">
+                [% FOREACH state IN [ ['confirmed', 'Open'], ['hidden', 'Spam'] ] %]
+                    <option [% 'selected ' IF state.0 == problem.state %] value="[% state.0 %]">[% state.1 %]</option>
+                [% END %]
+                </select>
+            </div>
+            [% END %]
+            -->
+
         [% IF c.cobrand.allow_photo_upload %]
             <div id="fileupload_normalUI">
             [% IF upload_fileid %]
